@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counting board</title>
+    </head>
+
+    <body>
+        <header class="header"> 
+            <h1 class="header_h1">Score Board</h1>
+        </header>
+
+        <main class="container">
+            <section class="container_home">
+                <h3 class="container_h3">HOME</h3>
+                <p class="container_score" id="score_home">0</p>
+                <div class="btn_group">
+                    <button class="btn" onclick="add1h()">+1</button>
+                    <button class="btn" onclick="add2h()">+2</button>
+                    <button class="btn" onclick="add3h()">+3</button>
+                </div>
+            </section>
+            
+            <section class="container_guest">
+                <h3 class="container_h3">GUEST</h3>
+                <p class="container_score" id="score_guest">0</p>
+                <div class="btn_group">
+                    <button class="btn" onclick="add1g()">+1</button>
+                    <button class="btn" onclick="add2g()">+2</button>
+                    <button class="btn" onclick="add3g()">+3</button>
+                </div>
+            </section>
+        </main>
+        <div class="container_reset">
+            <button class="btn_reset" onclick="reset()">Reset</button>  
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

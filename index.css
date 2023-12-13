@@ -1,0 +1,121 @@
+/* ||reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ||general */
+body {
+    min-height: 100vh;
+    width: auto;
+    font-family: monospace, 'Courier-New', Courier;
+    font-size: 1.5rem;
+    padding: 1em;
+    background-color: #333;
+    color: whitesmoke;
+    
+}
+
+/* ||header */
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.header_h1{
+    display: inline-block;
+    white-space: nowrap;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+/* ||container */
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container_h3{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.container_score{
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 20px 0;
+    
+}
+
+
+/* ||button */
+.btn_group{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.container_reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn,
+.btn_reset{
+    background-color: #333;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.7em;
+    margin: 0.2em;
+}
+
+
+.btn_reset:hover,
+.btn_reset:focus{
+    color: red;
+    border: 2px solid red;
+    transform: scale(1.2);
+}
+
+.btn:hover,
+.btn:focus{
+    transform: scale(1.2)
+}
+
+.btn:active,
+.btn_reset:active{
+    background-color: whitesmoke;
+    color: #333;
+    border: none;  
+}
+
+/* @media screen and (min-width: 576px){
+    .container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .container_h3{
+        margin: 20px;
+    }
+    .container_reset{
+        margin: 20px;
+    }
+} */
+
+
+
