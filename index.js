@@ -4,6 +4,17 @@ let scoreElGuest = document.getElementById('score_guest')
 let scoreHome = 0
 let scoreGuest = 0
 
+//revise
+
+// example
+//addScore(scoreHome,3) for +3 point to Home team
+//function addScore(team, points) {
+//    team += points;
+//    scoreEl.textContent = team;
+// }
+
+
+
 //home
 function add1h() {
     scoreHome += 1
@@ -16,7 +27,7 @@ function add2h() {
 function add3h() {
     scoreHome += 3
     scoreElHome.textContent = scoreHome
-}
+} 
 
 //Guest
 function add1g() {
@@ -30,8 +41,9 @@ function add2g() {
 function add3g() {
     scoreGuest += 3
     scoreElGuest.textContent = scoreGuest
-}
+} 
 
+ 
 //reset
 function reset() {
     scoreGuest = 0
@@ -39,3 +51,7 @@ function reset() {
     scoreElGuest.textContent = scoreGuest
     scoreElHome.textContent = scoreHome
 }
+
+
+
+
